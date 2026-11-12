@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Buah Segar - Buah Segar Premium untuk Keluarga Anda</title>
+    
+    <!-- 1. Bootstrap 5 CSS (Lokal - folder asssets) -->
+    <link rel="stylesheet" href="asssets/css/bootstrap.min.css">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- 2. Custom Style CSS (Lokal - folder asssets) -->
+    <link rel="stylesheet" href="asssets/css/style.css?v=navbar-4">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom py-3 sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center fw-bold text-dark fs-6" href="index.html">
+                <span class="brand-icon me-2">
+                    <i class="bi bi-apple"></i>
+                </span>
+                Toko Buah Segar
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto gap-lg-3">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#produk-unggulan">Produk</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#keunggulan">Tentang Kami</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+                </ul>
+                
+                <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0">
+                    <a href="keranjang.html" class="cart-icon-link position-relative text-dark text-decoration-none fs-5">
+                        <i class="bi bi-cart3"></i>
+                        <span id="navCartBadge" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-badge" hidden>
+                            0
+                        </span>
+                    </a>
+                    <a href="#" class="btn btn-green btn-sm px-3 py-2 fw-medium rounded-2">
+                        Login / Register
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content py-4">
+        <div class="container">
+            
+            <!-- 1. Hero Section -->
+            <section class="hero-box mb-4">
+                <div class="row g-0 align-items-center">
+                    <div class="col-lg-6 hero-content">
+                        <div class="hero-badge mb-3">
+                            <i class="bi bi-sprout-fill me-1"></i> Pilihan Petani Lokal
+                        </div>
+                        <h1 class="fw-bold text-dark mb-3 hero-title">
+                            Buah Segar <span class="text-green">Premium</span><br>
+                            untuk Keluarga Anda
+                        </h1>
+                        <p class="text-muted small mb-4 hero-desc">
+                            Dipetik langsung dari kebun petani lokal, dijaga kesegarannya, dan diantar cepat sampai ke depan pintu Anda.
+                        </p>
+                        
+                        <div class="d-flex flex-wrap gap-2 mb-4">
+                            <a href="#produk-unggulan" class="btn btn-green px-4 py-2 fw-medium rounded-2 small">
+                                <i class="bi bi-bag me-2"></i>Belanja Sekarang
+                            </a>
+                            <a href="#keunggulan" class="btn btn-outline-secondary bg-white text-dark border px-3 py-2 fw-medium rounded-2 small">
+                                Pelajari Lebih Lanjut <i class="bi bi-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+
+                        <div class="border-top pt-3 mt-2 d-flex gap-4 gap-md-5">
+                            <div>
+                                <div class="fw-bold text-dark fs-6">500+</div>
+                                <div class="text-muted stat-label">Pelanggan</div>
+                            </div>
+                            <div>
+                                <div class="fw-bold text-dark fs-6">8+</div>
+                                <div class="text-muted stat-label">Jenis Buah</div>
+                            </div>
+                            <div>
+                                <div class="fw-bold text-dark fs-6">24/7</div>
+                                <div class="text-muted stat-label">Pengiriman</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 hero-visual">
+                        <div class="hero-image-placeholder">
+                            Gambar Tumpukan Buah
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. 4 Kartu Keunggulan -->
+            <section id="keunggulan" class="mb-5">
+                <div class="row g-3">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="feature-card d-flex align-items-start gap-3 h-100">
+                            <div class="feature-icon"><i class="bi bi-feather"></i></div>
+                            <div>
+                                <h6 class="fw-bold text-dark mb-1 feature-title">Buah Pilihan</h6>
+                                <p class="text-muted mb-0 feature-desc">Dipetik langsung dari kebun petani lokal terbaik.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="feature-card d-flex align-items-start gap-3 h-100">
+                            <div class="feature-icon"><i class="bi bi-truck"></i></div>
+                            <div>
+                                <h6 class="fw-bold text-dark mb-1 feature-title">Pengiriman Cepat</h6>
+                                <p class="text-muted mb-0 feature-desc">Diantar langsung ke rumah dalam kondisi segar.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="feature-card d-flex align-items-start gap-3 h-100">
+                            <div class="feature-icon"><i class="bi bi-shield-check"></i></div>
+                            <div>
+                                <h6 class="fw-bold text-dark mb-1 feature-title">Higienis & Aman</h6>
+                                <p class="text-muted mb-0 feature-desc">Proses pengemasan bersih tanpa bahan pengawet.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="feature-card d-flex align-items-start gap-3 h-100">
+                            <div class="feature-icon"><i class="bi bi-clock"></i></div>
+                            <div>
+                                <h6 class="fw-bold text-dark mb-1 feature-title">Layanan 24/7</h6>
+                                <p class="text-muted mb-0 feature-desc">Siap melayani pesanan kapan saja Anda butuh.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 3. Produk Unggulan -->
+            <section id="produk-unggulan" class="mb-4">
+                <div class="d-flex justify-content-between align-items-end mb-4">
+                    <div>
+                        <h4 class="fw-bold text-dark mb-1">Produk Unggulan</h4>
+                        <p class="text-muted small mb-0">Pilihan buah segar terbaik minggu ini</p>
+                    </div>
+                    <a href="#" class="text-green text-decoration-none fw-semibold small">
+                        Lihat Semua <i class="bi bi-arrow-right ms-1"></i>
+                    </a>
+                </div>
+
+                <div class="row g-3">
+                    <!-- Produk 1: Apel Fuji -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product-card h-100 d-flex flex-column">
+                            <div class="product-banner banner-pink">
+                                <span class="badge-segar">Segar</span>
+                                Apel Fuji
+                            </div>
+                            <div class="p-3 d-flex flex-column flex-grow-1">
+                                <h6 class="fw-bold text-dark mb-1">Apel Fuji</h6>
+                                <p class="text-muted product-desc mb-3">
+                                    Apel fuji segar impor dengan rasa manis renyah dan tekstur padat.
+                                </p>
+                                <div class="mt-auto">
+                                    <div class="fw-bold text-green mb-2">Rp 35.000</div>
+                                    <button type="button" class="btn btn-green w-100 py-2 fw-medium rounded-2 small btn-add-cart" data-name="Apel Fuji">
+                                        <i class="bi bi-cart-plus me-1"></i> Tambah ke Keranjang
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produk 2: Mangga Harumanis -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product-card h-100 d-flex flex-column">
+                            <div class="product-banner banner-yellow">
+                                <span class="badge-segar">Segar</span>
+                                Mangga Harumanis
+                            </div>
+                            <div class="p-3 d-flex flex-column flex-grow-1">
+                                <h6 class="fw-bold text-dark mb-1">Mangga Harumanis</h6>
+                                <p class="text-muted product-desc mb-3">
+                                    Mangga harumanis lokal pilihan, daging buah tebal dan manis.
+                                </p>
+                                <div class="mt-auto">
+                                    <div class="fw-bold text-green mb-2">Rp 28.000</div>
+                                    <button type="button" class="btn btn-green w-100 py-2 fw-medium rounded-2 small btn-add-cart" data-name="Mangga Harumanis">
+                                        <i class="bi bi-cart-plus me-1"></i> Tambah ke Keranjang
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produk 3: Jeruk Manis -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product-card h-100 d-flex flex-column">
+                            <div class="product-banner banner-orange">
+                                <span class="badge-segar">Segar</span>
+                                Jeruk Manis
+                            </div>
+                            <div class="p-3 d-flex flex-column flex-grow-1">
+                                <h6 class="fw-bold text-dark mb-1">Jeruk Manis</h6>
+                                <p class="text-muted product-desc mb-3">
+                                    Jeruk manis kaya vitamin C, berair dan menyegarkan.
+                                </p>
+                                <div class="mt-auto">
+                                    <div class="fw-bold text-green mb-2">Rp 30.000</div>
+                                    <button type="button" class="btn btn-green w-100 py-2 fw-medium rounded-2 small btn-add-cart" data-name="Jeruk Manis">
+                                        <i class="bi bi-cart-plus me-1"></i> Tambah ke Keranjang
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produk 4: Pisang Cavendish -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product-card h-100 d-flex flex-column">
+                            <div class="product-banner banner-cream">
+                                <span class="badge-segar">Segar</span>
+                                Pisang Cavendish
+                            </div>
+                            <div class="p-3 d-flex flex-column flex-grow-1">
+                                <h6 class="fw-bold text-dark mb-1">Pisang Cavendish</h6>
+                                <p class="text-muted product-desc mb-3">
+                                    Pisang cavendish matang pohon, lembut dan bergizi tinggi.
+                                </p>
+                                <div class="mt-auto">
+                                    <div class="fw-bold text-green mb-2">Rp 18.000</div>
+                                    <button type="button" class="btn btn-green w-100 py-2 fw-medium rounded-2 small btn-add-cart" data-name="Pisang Cavendish">
+                                        <i class="bi bi-cart-plus me-1"></i> Tambah ke Keranjang
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="kontak" class="bg-white border-top pt-5 pb-4 mt-auto">
+        <div class="container">
+            <div class="row gy-4 pb-4">
+                <div class="col-lg-5 col-md-6">
+                    <div class="d-flex align-items-center fw-bold text-dark mb-2">
+                        <svg class="footer-brand-icon text-success me-2" viewBox="0 0 16 16" aria-hidden="true">
+                            <path fill="currentColor" d="M14.5 1.5C8 1.4 3.2 3 2 6.6c-.7 2.2.7 4.2 2.8 4 1.8-.2 3-1.8 4.2-3.4-.5 2-1.8 3.8-4 5.5l1 1c4.5-3.2 7.8-7.2 8.5-12.2Z"></path>
+                            <path d="M3.5 12.8c2.2-2.2 4.7-4.2 8.2-6.1" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.1"></path>
+                        </svg>
+                        Toko Buah Segar
+                    </div>
+                    <p class="text-muted small mb-0 footer-desc">
+                        Buah premium pilihan petani lokal, diantar segar sampai ke rumah Anda.
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-6">
+                    <h6 class="fw-bold text-dark small mb-3">Menu</h6>
+                    <ul class="list-unstyled small d-flex flex-column gap-2 mb-0">
+                        <li><a href="index.html" class="text-muted text-decoration-none">Home</a></li>
+                        <li><a href="#produk-unggulan" class="text-muted text-decoration-none">Produk</a></li>
+                        <li><a href="#keunggulan" class="text-muted text-decoration-none">Tentang Kami</a></li>
+                        <li><a href="#kontak" class="text-muted text-decoration-none">Kontak</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-3 col-6">
+                    <h6 class="fw-bold text-dark small mb-3">Kontak</h6>
+                    <ul class="list-unstyled small text-muted d-flex flex-column gap-2 mb-0">
+                        <li><i class="bi bi-envelope text-success me-2"></i>hello@tokobuahsegar.id</li>
+                        <li><i class="bi bi-telephone text-success me-2"></i>0800-1234-5678</li>
+                        <li><i class="bi bi-geo-alt text-success me-2"></i>Jl. Buah Segar No. 1, Jakarta</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-top pt-4 text-center">
+                <p class="text-muted mb-0 copyright-text">
+                    &copy; 2026 Toko Buah Segar. Semua hak dilindungi.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 3. Bootstrap 5 JS (Lokal - folder asssets) -->
+    <script src="asssets/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- 4. Custom Script JS (Lokal - folder asssets) -->
+    <script src="asssets/js/script.js?v=cart-page-2"></script>
+</body>
+</html>
