@@ -240,6 +240,29 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+    const productSearch = document.getElementById("productSearch");
+    const productItems = document.querySelectorAll(".product-item");
+    const productSearchEmpty = document.getElementById("productSearchEmpty");
+
+    if (productSearch) {
+        productSearch.addEventListener("input", function () {
+            const query = productSearch.value.trim().toLocaleLowerCase("id");
+            let visibleCount = 0;
+
+            productItems.forEach(function (productItem) {
+                const matches = productItem.textContent.toLocaleLowerCase("id").includes(query);
+                productItem.hidden = !matches;
+                if (matches) {
+                    visibleCount += 1;
+                }
+            });
+
+            if (productSearchEmpty) {
+                productSearchEmpty.hidden = visibleCount > 0;
+            }
+        });
+    }
+
     const contactForm = document.getElementById("contactForm");
     const alertContainer = document.getElementById("alertContainer");
     const submitBtn = document.getElementById("submitBtn");
